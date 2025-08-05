@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Accueil – JF Digital</title>
+  <title>Accueil – JF Digital Cameroun</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
@@ -11,30 +11,23 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f9fa;
       color: #212529;
-      scroll-behavior: smooth;
     }
     header {
-      background-color: #0a192f;
+      background: linear-gradient(90deg, #007a33, #ce1126, #fcd116);
       color: white;
       padding: 4rem 1rem;
       text-align: center;
     }
-    h2 {
+    .section-title {
       color: #0a192f;
       margin-top: 2rem;
+      font-weight: bold;
     }
-    .btn-primary {
-      background-color: #0a192f;
-      border: none;
-    }
-    .btn-primary:hover {
-      background-color: #06101e;
-    }
-    .btn-whatsapp {
+    .btn-cta {
       background-color: #25D366;
       color: white;
     }
-    .btn-whatsapp:hover {
+    .btn-cta:hover {
       background-color: #1ebe5d;
     }
     .nav-link {
@@ -45,16 +38,22 @@
       text-align: center;
       padding: 1rem;
       margin-top: 3rem;
-      font-size: 0.9rem;
+    }
+    .logo-svg {
+      height: 32px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">JF Digital</a>
+      <a class="navbar-brand" href="#">
+        <img src="#logo-jf" alt="Logo JF" class="logo-svg me-2">
+        <span>JF Digital Cameroun</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -68,74 +67,54 @@
     </div>
   </nav>
 
-  <!-- Header -->
   <header>
-    <h1>Bienvenue chez JF Digital</h1>
+    <h1>Bienvenue chez JF Digital Cameroun</h1>
     <p class="lead">Création de sites vitrines professionnels & rapides pour vous démarquer.</p>
-    <a href="48h.html" class="btn btn-primary btn-lg mt-3">
-      ⚡ Découvrir l’offre 48h
-    </a>
+    <a href="48h.html" class="btn btn-cta btn-lg mt-3"><i class="bi bi-lightning-charge-fill"></i> Voir l'offre 48h</a>
   </header>
 
-  <!-- Services -->
-  <div class="container my-5" id="services">
-    <h2>Nos Services</h2>
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <div class="card shadow-sm mb-4">
-          <div class="card-body">
-            <h5 class="card-title">Site Vitrine 48h</h5>
-            <p class="card-text">Un site clé en main livré en 2 jours. Idéal pour entrepreneurs pressés.</p>
-            <a href="48h.html" class="btn btn-outline-primary">Voir l'offre</a>
-          </div>
+  <div class="container">
+    <section id="services" class="mt-5">
+      <h2 class="section-title">🌍 Nos Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h5><i class="bi bi-stopwatch-fill text-success"></i> Site Vitrine 48h</h5>
+          <p>Un site clé en main livré en 2 jours. Idéal pour entrepreneurs pressés.</p>
+        </div>
+        <div class="col-md-4">
+          <h5><i class="bi bi-palette-fill text-danger"></i> Sites personnalisés</h5>
+          <p>Des solutions web sur mesure pour vos besoins spécifiques.</p>
+        </div>
+        <div class="col-md-4">
+          <h5><i class="bi bi-wrench-adjustable text-warning"></i> Assistance technique</h5>
+          <p>Maintenance, mises à jour, et support technique à petit prix.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm mb-4">
-          <div class="card-body">
-            <h5 class="card-title">Sites personnalisés</h5>
-            <p class="card-text">Des solutions web sur mesure pour vos besoins spécifiques.</p>
-            <a href="#contact" class="btn btn-outline-primary">Demander un devis</a>
-          </div>
+    </section>
+
+    <section id="portfolio" class="mt-5">
+      <h2 class="section-title">📸 Exemples de Réalisations</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="https://via.placeholder.com/500x300?text=Exemple+Site+1" class="img-fluid rounded" alt="Exemple 1">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="https://via.placeholder.com/500x300?text=Exemple+Site+2" class="img-fluid rounded" alt="Exemple 2">
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm mb-4">
-          <div class="card-body">
-            <h5 class="card-title">Assistance technique</h5>
-            <p class="card-text">Maintenance, mises à jour, et support technique à petit prix.</p>
-            <a href="#contact" class="btn btn-outline-primary">En savoir plus</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
+
+    <section id="contact" class="mt-5 text-center">
+      <h2 class="section-title">📞 Contactez-nous</h2>
+      <p>Discutons de votre projet et créons ensemble votre présence en ligne.</p>
+      <a href="https://wa.me/237690831717?text=Je+veux+créer+mon+site+avec+JF+Digital" class="btn btn-cta btn-lg">
+        <i class="bi bi-whatsapp"></i> Discuter sur WhatsApp
+      </a>
+    </section>
   </div>
 
-  <!-- Portfolio -->
-  <div class="container" id="portfolio">
-    <h2>Exemples de réalisations</h2>
-    <div class="row mt-4">
-      <div class="col-md-6 mb-4">
-        <img src="https://via.placeholder.com/600x350?text=Site+Client+1" class="img-fluid rounded" alt="Exemple site 1">
-      </div>
-      <div class="col-md-6 mb-4">
-        <img src="https://via.placeholder.com/600x350?text=Site+Client+2" class="img-fluid rounded" alt="Exemple site 2">
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact -->
-  <div class="container mt-5 text-center" id="contact">
-    <h2>Contactez-nous</h2>
-    <p>Discutons de votre projet et créons ensemble votre présence en ligne.</p>
-    <a href="https://wa.me/237690831717?text=Bonjour+JF+Digital%2C+je+suis+intéressé+par+vos+services." class="btn btn-whatsapp btn-lg">
-      <i class="bi bi-whatsapp"></i> Écrivez-nous sur WhatsApp
-    </a>
-  </div>
-
-  <!-- Footer -->
-  <footer class="mt-5">
-    &copy; 2025 JF Digital – Moudio II Joseph Francis
+  <footer>
+    &copy; 2025 <strong>JF Digital Cameroun</strong> – Moudio II Joseph Francis
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
