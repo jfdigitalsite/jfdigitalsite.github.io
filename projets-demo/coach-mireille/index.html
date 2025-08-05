@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Coach Mireille - Démo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coach Mireille – Démo site de coaching | JF Digital Cameroun</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { background-color: #ce1126; color: white; text-align: center; font-family: sans-serif; padding: 2rem; }
-    h1 { font-size: 2.5rem; }
-    a { color: #fcd116; text-decoration: underline; display: block; margin-top: 2rem; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f8f7;
+      color: #212529;
+    }
+    header {
+      background: linear-gradient(90deg, #b5d3c0, #d4c0e7);
+      color: #2c2c2c;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .mockup {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .btn-cta {
+      background-color: #8a66cc;
+      color: white;
+      font-weight: bold;
+    }
+    .btn-cta:hover {
+      background-color: #6f4ab9;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      background-color: #f1f1f1;
+    }
   </style>
 </head>
 <body>
-  <h1>🧘‍♀️ Coach Mireille</h1>
-  <p>Coaching bien-être et santé mentale avec Mireille.</p>
-  <a href="/">← Retour à l’accueil</a>
+
+  <header>
+    <h1>🧘‍♀️ Coach Mireille</h1>
+    <p class="lead">Exemple de site pour coach en bien-être, santé mentale ou développement personnel.</p>
+  </header>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>🌿 Présentation</h3>
+        <p>Le site de Coach Mireille est un modèle idéal pour présenter ses services, ses accompagnements, ses témoignages clients, ou encore son calendrier de séances.</p>
+        <ul>
+          <li>✔️ Présentation de la coach</li>
+          <li>✔️ Mise en avant des programmes</li>
+          <li>✔️ Design apaisant et professionnel</li>
+          <li>✔️ Formulaire de contact et WhatsApp direct</li>
+        </ul>
+        <a href="https://wa.me/237690831717?text=Je+veux+un+site+comme+Coach+Mireille" class="btn btn-cta mt-3">
+          💬 Je veux le même
+        </a>
+      </div>
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/600x400?text=Capture+Coach+Mireille" alt="Capture Coach Mireille" class="mockup img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 JF Digital Cameroun – Démo Coach Mireille
+  </footer>
+
 </body>
 </html>
