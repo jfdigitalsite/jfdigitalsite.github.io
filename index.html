@@ -3,27 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JF Digital - Moudio II Joseph Francis</title>
+  <title>Accueil – JF Digital</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f9fa;
       color: #212529;
+      scroll-behavior: smooth;
     }
     header {
       background-color: #0a192f;
       color: white;
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
       text-align: center;
     }
     h2 {
-      margin-top: 2rem;
       color: #0a192f;
+      margin-top: 2rem;
     }
-    .btn-whatsapp {
-      background-color: #25D366;
-      color: white;
+    .btn-primary {
+      background-color: #0a192f;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #06101e;
+    }
+    .nav-link {
+      color: white !important;
     }
     footer {
       background-color: #dee2e6;
@@ -32,94 +40,97 @@
       margin-top: 3rem;
       font-size: 0.9rem;
     }
-    a {
-      color: #0a192f;
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">JF Digital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
   <header>
-    <h1>JF Digital</h1>
-    <p>Développeur Web & IA basé à Yaoundé</p>
+    <h1>Bienvenue chez JF Digital</h1>
+    <p class="lead">Création de sites vitrines professionnels & rapides pour vous démarquer.</p>
+    <a href="48h.html" class="btn btn-primary btn-lg mt-3">
+      ⚡ Découvrir l’offre 48h
+    </a>
   </header>
 
-  <div class="container mt-4">
-
-    <section>
-      <h2>Services</h2>
-      <ul>
-        <li>Création de sites web vitrines</li>
-        <li>Sites assistés par Intelligence Artificielle</li>
-        <li>Applications web simples (Laravel, Bootstrap)</li>
-        <li>Maintenance et assistance web</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projets récents</h2>
-      <p><strong>Cabinet Médical Fictif</strong> – Site responsive HTML/CSS</p>
-      <p><strong>App Facturation Simple</strong> – Application Laravel + Bootstrap</p>
-    </section>
-
-    <section>
-      <h2>Mes Offres</h2>
-      <ul>
-        <li>
-          <strong>✔️</strong> 
-          <a href="48h.html">Site vitrine simple : 25 000 FCFA (livré en 48h)</a>
-        </li>
-        <li><strong>🤖 Site avec Chat IA intégré :</strong> 45 000 FCFA</li>
-        <li><strong>💼 Application web (Laravel/Bootstrap) :</strong> dès 60 000 FCFA</li>
-        <li><strong>🔧 Maintenance mensuelle :</strong> 10 000 FCFA</li>
-      </ul>
-      <a href="48h.html" class="btn btn-whatsapp mt-2">Voir l'offre 48h</a>
-    </section>
-
-    <section>
-      <h2>À propos</h2>
-      <p>Je suis <strong>Moudio II Joseph Francis</strong>, Ingénieur des Travaux en Informatique, passionné par le web et l’entrepreneuriat digital.</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p><strong>Email :</strong> <a href="mailto:moudiojobel@gmail.com">moudiojobel@gmail.com</a></p>
-      <p><strong>WhatsApp :</strong> <a href="https://wa.me/237690831717" target="_blank">+237 690 831 717</a></p>
-
-      <form id="whatsappForm" class="mt-3">
-        <h5>Laissez-moi un message :</h5>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Votre nom" id="name" required>
+  <!-- Services -->
+  <div class="container my-5" id="services">
+    <h2>Nos Services</h2>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Site Vitrine 48h</h5>
+            <p class="card-text">Un site clé en main livré en 2 jours. Idéal pour entrepreneurs pressés.</p>
+            <a href="48h.html" class="btn btn-outline-primary">Voir l'offre</a>
+          </div>
         </div>
-        <div class="mb-2">
-          <input type="email" class="form-control" placeholder="Votre email" id="email" required>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Sites personnalisés</h5>
+            <p class="card-text">Des solutions web sur mesure pour vos besoins spécifiques.</p>
+            <a href="#contact" class="btn btn-outline-primary">Demander un devis</a>
+          </div>
         </div>
-        <div class="mb-2">
-          <textarea class="form-control" placeholder="Votre message" id="message" rows="4" required></textarea>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Assistance technique</h5>
+            <p class="card-text">Maintenance, mises à jour, et support technique à petit prix.</p>
+            <a href="#contact" class="btn btn-outline-primary">En savoir plus</a>
+          </div>
         </div>
-        <button type="submit" class="btn btn-whatsapp">Envoyer via WhatsApp</button>
-      </form>
-    </section>
-
+      </div>
+    </div>
   </div>
 
-  <footer>
-    &copy; 2025 JF Digital – Tous droits réservés.
+  <!-- Portfolio -->
+  <div class="container" id="portfolio">
+    <h2>Exemples de réalisations</h2>
+    <div class="row mt-4">
+      <div class="col-md-6 mb-4">
+        <img src="https://via.placeholder.com/600x350?text=Site+Client+1" class="img-fluid rounded" alt="Exemple site 1">
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="https://via.placeholder.com/600x350?text=Site+Client+2" class="img-fluid rounded" alt="Exemple site 2">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="container mt-5 text-center" id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Discutons de votre projet et créons ensemble votre présence en ligne.</p>
+    <a href="https://wa.me/237690831717?text=Bonjour+JF+Digital%2C+je+suis+intéressé+par+vos+services." class="btn btn-whatsapp btn-lg">
+      <i class="bi bi-whatsapp"></i> Écrivez-nous sur WhatsApp
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    &copy; 2025 JF Digital – Moudio II Joseph Francis
   </footer>
 
-  <script>
-    document.getElementById("whatsappForm").addEventListener("submit", function(e){
-      e.preventDefault();
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const message = document.getElementById("message").value.trim();
-      const phoneNumber = "237690831717";
-
-      const url = `https://wa.me/${phoneNumber}?text=Bonjour%2C%20je%20suis%20${encodeURIComponent(name)}%20(%20${encodeURIComponent(email)}%20)%0A%0A${encodeURIComponent(message)}`;
-      window.open(url, '_blank');
-    });
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
