@@ -42,7 +42,12 @@
     .logo-svg {
       height: 32px;
       vertical-align: middle;
-      margin-right: 8px;
+    }
+    .project-card img {
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -52,11 +57,12 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <!-- Logo SVG intégré -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 200 200" class="me-2">
+          <rect width="200" height="200" fill="#007a33"/>
+          <rect width="133" height="200" fill="#ce1126"/>
           <rect width="66" height="200" fill="#fcd116"/>
-          <rect x="66" width="67" height="200" fill="#ce1126"/>
-          <rect x="133" width="67" height="200" fill="#007a33"/>
-          <text x="100" y="120" font-family="Arial, sans-serif" font-size="60" fill="white" text-anchor="middle" font-weight="bold">JF</text>
+          <text x="100" y="115" font-family="Arial, sans-serif" font-size="50" fill="white" text-anchor="middle" font-weight="bold">JF</text>
         </svg>
         JF Digital Cameroun
       </a>
@@ -73,16 +79,12 @@
     </div>
   </nav>
 
-  <!-- Header -->
   <header>
     <h1>Bienvenue chez JF Digital Cameroun</h1>
     <p class="lead">Création de sites vitrines professionnels & rapides pour vous démarquer.</p>
-    <a href="48h.html" class="btn btn-cta btn-lg mt-3">
-      <i class="bi bi-lightning-charge-fill"></i> Voir l'offre 48h
-    </a>
+    <a href="48h.html" class="btn btn-cta btn-lg mt-3"><i class="bi bi-lightning-charge-fill"></i> Voir l'offre 48h</a>
   </header>
 
-  <!-- Services -->
   <div class="container">
     <section id="services" class="mt-5">
       <h2 class="section-title">🌍 Nos Services</h2>
@@ -103,43 +105,41 @@
     </section>
 
     <section id="portfolio" class="mt-5">
-  <h2 class="section-title">📸 Exemples de Réalisations</h2>
-  <div class="row">
-    <div class="col-md-4 mb-3">
-      <a href="projets-demo/ngondoshop/">
-        <img src="https://via.placeholder.com/400x250.png?text=NgondoShop" class="img-fluid rounded" alt="NgondoShop">
-        <p class="mt-2 fw-bold text-center">🛒 NgondoShop</p>
-      </a>
-    </div>
-    <div class="col-md-4 mb-3">
-      <a href="projets-demo/coach-mireille/">
-        <img src="https://via.placeholder.com/400x250.png?text=Coach+Mireille" class="img-fluid rounded" alt="Coach Mireille">
-        <p class="mt-2 fw-bold text-center">🧘‍♀️ Coach Mireille</p>
-      </a>
-    </div>
-    <div class="col-md-4 mb-3">
-      <a href="projets-demo/transport-pro/">
-        <img src="https://via.placeholder.com/400x250.png?text=Transport+Pro" class="img-fluid rounded" alt="Transport Pro">
-        <p class="mt-2 fw-bold text-center">🚛 Transport Pro</p>
-      </a>
-    </div>
-    <div class="col-md-4 mb-3">
-      <a href="projets-demo/snack-tonton/">
-        <img src="https://via.placeholder.com/400x250.png?text=Snack+Chez+Tonton" class="img-fluid rounded" alt="Snack Chez Tonton">
-        <p class="mt-2 fw-bold text-center">🍗 Snack Chez Tonton</p>
-      </a>
-    </div>
-    <div class="col-md-4 mb-3">
-      <a href="projets-demo/gic-agrosud/">
-        <img src="https://via.placeholder.com/400x250.png?text=GIC+Agrosud" class="img-fluid rounded" alt="GIC Agrosud">
-        <p class="mt-2 fw-bold text-center">🌱 GIC Agrosud</p>
-      </a>
-    </div>
-  </div>
-</section>
+      <h2 class="section-title">📸 Exemples de Réalisations</h2>
+      <div class="row g-4">
+        <div class="col-md-4 project-card">
+          <a href="projets-demo/ngondoshop/">
+            <img src="https://via.placeholder.com/400x250?text=NgondoShop" alt="NgondoShop">
+            <h5 class="mt-2">🛒 NgondoShop</h5>
+          </a>
+        </div>
+        <div class="col-md-4 project-card">
+          <a href="projets-demo/coach-mireille/">
+            <img src="https://via.placeholder.com/400x250?text=Coach+Mireille" alt="Coach Mireille">
+            <h5 class="mt-2">🧘‍♀️ Coach Mireille</h5>
+          </a>
+        </div>
+        <div class="col-md-4 project-card">
+          <a href="projets-demo/transport-pro/">
+            <img src="https://via.placeholder.com/400x250?text=Transport+Pro" alt="Transport Pro">
+            <h5 class="mt-2">🚛 Transport Pro</h5>
+          </a>
+        </div>
+        <div class="col-md-4 project-card">
+          <a href="projets-demo/snack-tonton/">
+            <img src="https://via.placeholder.com/400x250?text=Snack+Chez+Tonton" alt="Snack Chez Tonton">
+            <h5 class="mt-2">🍗 Snack Chez Tonton</h5>
+          </a>
+        </div>
+        <div class="col-md-4 project-card">
+          <a href="projets-demo/gic-agrosud/">
+            <img src="https://via.placeholder.com/400x250?text=GIC+Agrosud" alt="GIC Agrosud">
+            <h5 class="mt-2">🌱 GIC Agrosud</h5>
+          </a>
+        </div>
+      </div>
+    </section>
 
-
-    <!-- Contact -->
     <section id="contact" class="mt-5 text-center">
       <h2 class="section-title">📞 Contactez-nous</h2>
       <p>Discutons de votre projet et créons ensemble votre présence en ligne.</p>
@@ -149,7 +149,6 @@
     </section>
   </div>
 
-  <!-- Footer -->
   <footer>
     &copy; 2025 <strong>JF Digital Cameroun</strong> – Moudio II Joseph Francis
   </footer>
