@@ -42,6 +42,7 @@
     .logo-svg {
       height: 32px;
       vertical-align: middle;
+      margin-right: 0.5rem;
     }
   </style>
 </head>
@@ -50,8 +51,14 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="#logo-jf" alt="Logo JF" class="logo-svg me-2">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- LOGO SVG DIRECT -->
+        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 200 200">
+          <rect width="200" height="200" fill="#007a33"/>
+          <rect width="133" height="200" fill="#ce1126"/>
+          <rect width="66" height="200" fill="#fcd116"/>
+          <text x="100" y="115" font-family="Arial, sans-serif" font-size="50" fill="white" text-anchor="middle" font-weight="bold">JF</text>
+        </svg>
         <span>JF Digital Cameroun</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
