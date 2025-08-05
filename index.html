@@ -42,7 +42,7 @@
     .logo-svg {
       height: 32px;
       vertical-align: middle;
-      margin-right: 0.5rem;
+      margin-right: 8px;
     }
   </style>
 </head>
@@ -51,15 +51,14 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- LOGO SVG DIRECT -->
-        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 200 200">
-          <rect width="200" height="200" fill="#007a33"/>
-          <rect width="133" height="200" fill="#ce1126"/>
+      <a class="navbar-brand" href="#">
+        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
           <rect width="66" height="200" fill="#fcd116"/>
-          <text x="100" y="115" font-family="Arial, sans-serif" font-size="50" fill="white" text-anchor="middle" font-weight="bold">JF</text>
+          <rect x="66" width="67" height="200" fill="#ce1126"/>
+          <rect x="133" width="67" height="200" fill="#007a33"/>
+          <text x="100" y="120" font-family="Arial, sans-serif" font-size="60" fill="white" text-anchor="middle" font-weight="bold">JF</text>
         </svg>
-        <span>JF Digital Cameroun</span>
+        JF Digital Cameroun
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -74,12 +73,16 @@
     </div>
   </nav>
 
+  <!-- Header -->
   <header>
     <h1>Bienvenue chez JF Digital Cameroun</h1>
     <p class="lead">Création de sites vitrines professionnels & rapides pour vous démarquer.</p>
-    <a href="48h.html" class="btn btn-cta btn-lg mt-3"><i class="bi bi-lightning-charge-fill"></i> Voir l'offre 48h</a>
+    <a href="48h.html" class="btn btn-cta btn-lg mt-3">
+      <i class="bi bi-lightning-charge-fill"></i> Voir l'offre 48h
+    </a>
   </header>
 
+  <!-- Services -->
   <div class="container">
     <section id="services" class="mt-5">
       <h2 class="section-title">🌍 Nos Services</h2>
@@ -99,18 +102,39 @@
       </div>
     </section>
 
+    <!-- Portfolio -->
     <section id="portfolio" class="mt-5">
       <h2 class="section-title">📸 Exemples de Réalisations</h2>
       <div class="row">
-        <div class="col-md-6 mb-3">
-          <img src="https://via.placeholder.com/500x300?text=Exemple+Site+1" class="img-fluid rounded" alt="Exemple 1">
+        <div class="col-md-6 mb-4">
+          <img src="https://via.placeholder.com/500x300?text=NgondoShop.com" class="img-fluid rounded mb-2" alt="NgondoShop">
+          <h5>🛍️ NgondoShop.com</h5>
+          <p>Site e-commerce local pour vente de produits culturels et artisanaux camerounais.</p>
         </div>
-        <div class="col-md-6 mb-3">
-          <img src="https://via.placeholder.com/500x300?text=Exemple+Site+2" class="img-fluid rounded" alt="Exemple 2">
+        <div class="col-md-6 mb-4">
+          <img src="https://via.placeholder.com/500x300?text=GIC+AgroSud" class="img-fluid rounded mb-2" alt="GIC AgroSud">
+          <h5>🌾 GIC AgroSud</h5>
+          <p>Présentation des activités d’une coopérative agricole + contact WhatsApp intégré.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="https://via.placeholder.com/500x300?text=Coach+Mireille" class="img-fluid rounded mb-2" alt="Coach Mireille">
+          <h5>💼 Coach Mireille</h5>
+          <p>Site personnel avec blog, témoignages clients, prise de RDV et intégration Instagram.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="https://via.placeholder.com/500x300?text=Transport+Pro+Yaoundé" class="img-fluid rounded mb-2" alt="Transport Pro">
+          <h5>🚗 Transport Pro Yaoundé</h5>
+          <p>Page pro pour chauffeurs indépendants : services, tarifs & formulaire de réservation rapide.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="https://via.placeholder.com/500x300?text=Snack+Chez+Tonton" class="img-fluid rounded mb-2" alt="Snack Chez Tonton">
+          <h5>🍽️ Snack Chez Tonton</h5>
+          <p>Mini-site vitrine avec menu du jour, localisation Google Maps, et horaires d’ouverture.</p>
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="mt-5 text-center">
       <h2 class="section-title">📞 Contactez-nous</h2>
       <p>Discutons de votre projet et créons ensemble votre présence en ligne.</p>
@@ -120,6 +144,7 @@
     </section>
   </div>
 
+  <!-- Footer -->
   <footer>
     &copy; 2025 <strong>JF Digital Cameroun</strong> – Moudio II Joseph Francis
   </footer>
