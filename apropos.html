@@ -11,7 +11,7 @@
       background-color: #f8f9fa;
       color: #212529;
       margin: 0;
-      padding: 0;
+      padding-top: 70px; /* pour éviter que le contenu passe sous la navbar */
     }
 
     header {
@@ -62,15 +62,45 @@
     .btn-cta:hover {
       background-color: #1ebe5d;
     }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .nav-link.active {
+      font-weight: bold;
+      color: #007a33 !important;
+    }
   </style>
 </head>
 <body>
 
+  <!-- 🌐 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">JF Digital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Réalisations</a></li>
+          <li class="nav-item"><a class="nav-link active" href="apropos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🧑‍💻 Header avec image de fond -->
   <header>
     <h1>À propos de JF Digital Cameroun</h1>
     <p>Derrière chaque site, un créateur passionné.</p>
   </header>
 
+  <!-- 📄 Contenu -->
   <section class="content">
     <h2>Moudio II Joseph Francis</h2>
     <p><strong>Développeur web & entrepreneur</strong></p>
@@ -83,9 +113,12 @@
     <a href="https://wa.me/237694960314" target="_blank" class="btn btn-cta">Discutons sur WhatsApp</a>
   </section>
 
+  <!-- 📢 Footer -->
   <footer>
     © 2025 JF Digital Cameroun – Moudio II Joseph Francis
   </footer>
 
+  <!-- Bootstrap JS (pour le menu responsive) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
