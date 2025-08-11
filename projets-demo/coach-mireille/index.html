@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coach Mireille – Démo site de coaching | JF Digital Cameroun</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach Mireille – JF Digital Cameroun</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f8f7;
-      color: #212529;
+      color: white;
+      background: url('https://jfdigitalsite.github.io/images/coach-mireille.jpg') no-repeat center center/cover;
+      min-height: 100vh;
     }
     header {
-      background: linear-gradient(90deg, #b5d3c0, #d4c0e7);
-      color: #2c2c2c;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem 1rem;
       text-align: center;
-      padding: 4rem 1rem;
     }
-    .mockup {
-      max-width: 100%;
+    .content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .btn-cta {
-      background-color: #8a66cc;
-      color: white;
-      font-weight: bold;
-    }
-    .btn-cta:hover {
-      background-color: #6f4ab9;
     }
     footer {
+      background-color: rgba(0, 0, 0, 0.7);
       text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
-      background-color: #f1f1f1;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #fcd116 !important;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>🧘‍♀️ Coach Mireille</h1>
-    <p class="lead">Exemple de site pour coach en bien-être, santé mentale ou développement personnel.</p>
-  </header>
-
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-md-6">
-        <h3>🌿 Présentation</h3>
-        <p>Le site de Coach Mireille est un modèle idéal pour présenter ses services, ses accompagnements, ses témoignages clients, ou encore son calendrier de séances.</p>
-        <ul>
-          <li>✔️ Présentation de la coach</li>
-          <li>✔️ Mise en avant des programmes</li>
-          <li>✔️ Design apaisant et professionnel</li>
-          <li>✔️ Formulaire de contact et WhatsApp direct</li>
-        </ul>
-        <a href="https://wa.me/237690831717?text=Je+veux+un+site+comme+Coach+Mireille" class="btn btn-cta mt-3">
-          💬 Je veux le même
-        </a>
-      </div>
-      <div class="col-md-6">
-        <img src="https://via.placeholder.com/600x400?text=Capture+Coach+Mireille" alt="Capture Coach Mireille" class="mockup img-fluid">
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">JF Digital Cameroun</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="ngondoshop.html">NgondoShop</a></li>
+        <li class="nav-item"><a class="nav-link active" href="coach-mireille.html">Coach Mireille</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </div>
+</nav>
 
-  <footer>
-    &copy; 2025 JF Digital Cameroun – Démo Coach Mireille
-  </footer>
+<header class="mt-5 pt-5">
+  <h1 class="display-5 fw-bold">🧘‍♀️ Coach Mireille</h1>
+  <p class="lead">Coaching bien-être, yoga et développement personnel</p>
+</header>
 
+<div class="content text-center">
+  <p>Coach Mireille vous accompagne dans votre transformation physique et mentale à travers le yoga, la méditation et des conseils personnalisés pour un équilibre durable.</p>
+  <ul class="list-unstyled">
+    <li>✅ Séances de yoga en ligne et en présentiel</li>
+    <li>✅ Programmes personnalisés bien-être</li>
+    <li>✅ Accompagnement sur mesure</li>
+  </ul>
+  <a href="contact.html" class="btn btn-warning fw-bold mt-3">Je veux ce type de site</a>
+</div>
+
+<footer>
+  <p>© 2025 JF Digital Cameroun – Moudio II Joseph Francis</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
