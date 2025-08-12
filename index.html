@@ -1,153 +1,172 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JF Digital Cameroun – Création de sites web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JF Digital Cameroun – Création de sites vitrines</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
+
+  
+
+    
+    body { 
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://jfdigitalsite.github.io/images/jojo.jpg') no-repeat center center/cover;
-      color: white;
-      min-height: 100vh;
+      background-color: #f8f9fa;
+      color: #212529;
     }
-    header {
-      background-color: rgba(0, 0, 0, 0.6);
+    header.hero {
+      background-color: #343a40;
+      color: white;
       padding: 4rem 1rem;
       text-align: center;
     }
-    .content {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 2rem;
-      border-radius: 10px;
-      margin-bottom: 2rem;
+    section {
+      padding: 3rem 0;
     }
-    footer {
-      background-color: rgba(0, 0, 0, 0.7);
+    .section-title {
       text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: #0a192f;
     }
-    .navbar {
-      background-color: rgba(0, 0, 0, 0.8) !important;
-    }
-    .navbar-nav .nav-link {
-      color: white !important;
-    }
-    .navbar-nav .nav-link:hover {
-      color: #fcd116 !important;
-    }
-    .card {
-      background-color: rgba(255, 255, 255, 0.9);
-      color: black;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
+    .btn-cta {
       background-color: #25D366;
       color: white;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 24px;
-      z-index: 1000;
+      margin-top: 1rem;
     }
-    .whatsapp-float:hover {
+    .btn-cta:hover {
       background-color: #1ebe5d;
-      color: white;
-      text-decoration: none;
     }
+    footer {
+      background-color: #dee2e6;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+ 
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">JF Digital Cameroun</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
-        <li class="nav-item"><a class="nav-link" href="ngondoshop.html">NgondoShop</a></li>
-        <li class="nav-item"><a class="nav-link" href="coach-mireille.html">Coach Mireille</a></li>
-        <li class="nav-item"><a class="nav-link" href="transport-pro.html">Transport Pro</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">JF Digital Cameroun</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li> 
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Bienvenue chez JF Digital Cameroun</h1>
+      <p class="lead">Création de sites vitrines professionnels & rapides pour vous démarquer.</p>
+      <a href="48h.html" class="btn btn-cta btn-lg mt-3">🚀 Découvrir l'offre 48h</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="bg-white">
+    <div class="container">
+      <h2 class="section-title">Nos Services</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h5>⚡ Site Vitrine 48h</h5>
+          <p>Un site clé en main livré en 2 jours. Idéal pour entrepreneurs pressés.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>🎨 Sites personnalisés</h5>
+          <p>Des solutions web sur mesure pour vos besoins spécifiques.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>🛠️ Assistance technique</h5>
+          <p>Maintenance, mises à jour, et support technique à petit prix.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Exemples de Réalisations</h2>
+      <div class="row text-center">
+        <!-- Projet 1 -->
+        <div class="col-md-4 mb-4">
+          <img src="images/ngondoshop.jpg" class="card-img-top" alt="NgondoShop">
+
+          <h5>NgondoShop</h5>
+          <p>Boutique en ligne simple et efficace pour la vente de produits locaux.</p>
+          <a href="projets-demo/ngondoshop/" class="btn btn-success">Voir cet exemple</a>
+        </div>
+        <!-- Projet 2 -->
+       <div class="col-md-4 mb-4">
+  <img src="images/coach-mireille.jpg" class="card-img-top img-projet" alt="Coach Mireille" width="600" height="450">
+  <div class="card-body text-center">
+    <h5 class="card-title"> Coach Mireille</h5>
+    <p class="card-text">Coaching bien-être, yoga, remise en forme et développement personnel.</p>
+    <a href="projets-demo/coach-mireille/index.html" class="btn btn-success">Voir cet exemple</a>
   </div>
-</nav>
+</div>
 
-<header class="mt-5 pt-5">
-  <h1 class="display-4 fw-bold">Bienvenue chez JF Digital Cameroun</h1>
-  <p class="lead">Des sites web professionnels, rapides et prêts à propulser votre activité.</p>
-</header>
 
-<div class="container content">
-  <h2 class="text-center mb-4">🚀 Nos Services</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <h4>⏱ Site Vitrine 48h</h4>
-      <p>Un site clé en main livré en 2 jours. Idéal pour les entrepreneurs pressés qui veulent être visibles immédiatement.</p>
-    </div>
-    <div class="col-md-4">
-      <h4>🎨 Sites personnalisés</h4>
-      <p>Solutions web sur mesure avec design élégant et fonctionnalités adaptées à vos besoins spécifiques.</p>
-    </div>
-    <div class="col-md-4">
-      <h4>🔧 Assistance technique</h4>
-      <p>Maintenance, mises à jour, sécurité et support technique à prix abordable.</p>
+        <!-- Projet 3 -->
+        <div class="col-md-4">
+  
+    <img src="images/Transport Pro.jpg" class="card-img-top img-projet" alt="Coach Mireille" width="600" height="450"">
+    <div class="card-body text-center">
+      <h5 class="card-title"> Transport Pro</h5>
+      <p class="card-text">Gestion de flotte, réservation de trajets, géolocalisation et suivi des véhicules.</p>
+      <a href="projets-demo/transport-pro/index.html" class="btn btn-success">Voir cet exemple</a>
     </div>
   </div>
 </div>
 
-<div class="container content">
-  <h2 class="text-center mb-4">📸 Exemples de Réalisations</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
-        <img src="images/ngondoshop.jpg" class="card-img-top" alt="NgondoShop">
-        <div class="card-body text-center">
-          <h5 class="card-title">🛒 NgondoShop</h5>
-          <p class="card-text">Boutique en ligne clé en main, moderne et facile à gérer.</p>
-          <a href="ngondoshop.html" class="btn btn-success">Voir ce projet</a>
+        
+        <!-- Projet 4 -->
+        <!--<div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/350x220.png?text=Snack+Chez+Tonton" class="img-fluid rounded mb-2" alt="Snack Chez Tonton">
+          <h5>🍗 Snack Chez Tonton</h5>
+          <p>Un site vitrine pour un snack : menu, horaires, photos…</p>
+          <a href="projets-demo/snack-tonton/" class="btn btn-outline-primary btn-sm">Voir</a>
         </div>
+        <!-- Projet 5 -->
+        <!--<div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/350x220.png?text=GIC+Agrosud" class="img-fluid rounded mb-2" alt="GIC Agrosud">
+          <h5>🌱 GIC Agrosud</h5>
+          <p>Association agricole : mise en valeur des projets et membres.</p>
+          <a href="projets-demo/gic-agrosud/" class="btn btn-outline-primary btn-sm">Voir</a>
+        </div>-->
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
-        <img src="images/coach-mireille.jpg" class="card-img-top" alt="Coach Mireille">
-        <div class="card-body text-center">
-          <h5 class="card-title">🧘‍♀️ Coach Mireille</h5>
-          <p class="card-text">Coaching bien-être, yoga et développement personnel.</p>
-          <a href="coach-mireille.html" class="btn btn-success">Voir ce projet</a>
-        </div>
-      </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white text-center">
+    <div class="container">
+      <h2 class="section-title">📞 Contactez-nous</h2>
+      <p>Discutons de votre projet et créons ensemble votre présence en ligne.</p>
+      <a href="https://wa.me/237690831717?text=Bonjour+JF+Digital%2C+je+veux+créer+un+site" class="btn btn-cta btn-lg">
+        💬 Discuter sur WhatsApp
+      </a>
     </div>
-    <div class="col-md-4">
-      <div class="card mb-4 shadow-sm">
-        <img src="images/transport-pro.jpg" class="card-img-top" alt="Transport Pro">
-        <div class="card-body text-center">
-          <h5 class="card-title">🚛 Transport Pro</h5>
-          <p class="card-text">Solution web pour entreprises de transport et logistique.</p>
-          <a href="transport-pro.html" class="btn btn-success">Voir ce projet</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  </section>
 
-<footer>
-  <p>© 2025 JF Digital Cameroun – Moudio II Joseph Francis</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 <strong>JF Digital Cameroun</strong> – Moudio II Joseph Francis
+  </footer>
 
-<!-- Bouton WhatsApp -->
-<a href="https://wa.me/237690831717" class="whatsapp-float" target="_blank">💬</a>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
